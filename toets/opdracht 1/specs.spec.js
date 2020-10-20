@@ -6,21 +6,22 @@ describe('Testje 1', function() {
 });
 
 describe('Testje 2', function () {
-    it('should test', function () {
+    it('should have correct unitTest.item name', function () {
         expect(unitTest.item).toBe('voorbeeld');
-        it('should test', function () {
-            expect(unitTest.nummer).toEqual(3);
-        });
+    });
+    it('should have the correct unitTest.number', function () {
+        expect(unitTest.nummer).toEqual(3);
     });
 });
 
-describe('Testje 3', function () {
-    it('should test', function () {
+    describe('Testje 3', function () {
+    it('should have correct unitTest.description ', function () {
         expect(unitTest.beschrijving).toBe('Beschrijving');
-        describe('Testje 4', function () {
-            it('should test', function () {
-                expect(unitTest.boodschap).toEqual('Hallo');
-            });
+    });
+    
+    describe('Testje 4', function () {
+        it('should have correct unitTest.Message', function () {
+            expect(unitTest.boodschap).toEqual('Hallo');
         });
     });
 });
